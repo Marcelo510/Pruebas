@@ -1,0 +1,401 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="image/jpg" href="images/Mundo.jpg" />
+    <!-- Bootstrap CSS -->
+    //
+    <link rel="stylesheet" href="~/">
+
+
+    <title>Marcelo</title>
+    <link rel="icon" type="image/jpg" href="images/Mundo.jpg" />
+    <link rel="stylesheet" href="icon/style.css">
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/estilos.css" />
+    
+
+</head>
+<body onload="mueveReloj()">
+    <!-- <h1 class="float-left">MARCELO</h1> -->
+    <!-- Comienzo del Menu -->
+
+    <header class="container-header">
+        <div class="container-header">
+            <div class="container-logo-title">
+                <img src="" alt="">
+                <h1>MARCELO</h1>
+            </div>
+
+            <div class="container-menu">
+                <label class="icon-menu"></label>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <label class="icon-home"></label><span class="icon-triangle-down icon2"></span>
+
+                            <!-- <ul>
+                                <li><span class="icon-chevron-small-right"></span> Diseño grafico</li>
+                                <li><span class="icon-chevron-small-right"></span> Desarrollo web
+
+                                    <ul>
+                                        <li><span class="icon-chevron-small-right"></span> Diseño grafico</li>
+                                        <li><span class="icon-chevron-small-right"></span> Desarrollo web</li>
+                                        <li><span class="icon-chevron-small-right"></span> Programacion de sistemas</li>
+                                        <li><span class="icon-chevron-small-right"></span> Tecnico computacional</li>
+                                        <li><span class="icon-chevron-small-right"></span> Administracion de redes</li>
+                                        <li><span class="icon-chevron-small-right"></span> Discurso</li>
+                                    </ul>
+
+                                </li>
+                                <li><span class="icon-chevron-small-right"></span> Programacion de sistemas</li>
+                                <li><span class="icon-chevron-small-right"></span> Tecnico computacional</li>
+                                <li><span class="icon-chevron-small-right"></span> Administracion de redes</li>
+                                <li><span class="icon-chevron-small-right"></span> Discurso</li>
+                            </ul> -->
+
+                        </li>
+                        <li>
+                            PAGINAS <span class="icon-triangle-down"></span>
+                            <ul>
+                                <li><span class="icon-chevron-small-right"></span> <a href="https://www.minutouno.com">Minuto 1</a></li>
+                                <li><span class="icon-chevron-small-right"></span> <a href="https://www.infobae.com">Infobae</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            BUSQUEDAS <span class="icon-triangle-down"></span>
+
+                            <ul>
+                                <li><span class="icon-chevron-small-right"></span> <a href="https://www.google.com.ar">Google</a></li>
+                                <li><span class="icon-chevron-small-right"></span> <a href="https://www.yahoo.com">Yahoo</a></li>
+                            </ul>
+
+                        </li>
+                        <!-- <li>SHOP <span class="icon-triangle-down"></span></li>
+                        <li>ELEMENTS <span class="icon-triangle-down"></span></li>
+                        <li>MEGA MENU <span class="icon-triangle-down"></span></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Fin del Menu -->
+
+
+    <main>
+
+        <!-- <a href="https://google.com.ar" class="float-right button btn btn-primary">Google</a> -->
+
+
+        <form name="form_reloj" method=GET action="http://www.google.com.ar/search">
+            <input type="text" id="inpDiaHoy" disabled>
+            <input type="text" name="reloj" size="10" disabled>
+
+            <A HREF="http://www.google.com.ar/" target="_blank">
+                <IMG SRC="http://www.google.com/logos/Logo_40wht.gif" border="0" ALT="Google" align="absmiddle">
+            </A>
+            <INPUT TYPE=text name=q size=31 maxlength=255 value="" placeholder="Ingrese la busqueda">
+            <INPUT TYPE=hidden name=hl value=es>
+            <INPUT type=submit name=btnG VALUE="Buscar" formtarget="_blank">
+
+            <!-- <button onclick="RunFile">Notepad</button>
+            <a href="C:\windows\system32\notepad.exe">link</a> -->
+        </form>
+        <div>
+
+            <div class="panel-body">
+
+                <!-- <div class="panel-group" id="accordion" style="float: left; width: 220px;">
+                    <div class="panel panel-info">
+
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse0">Pagina</a>
+                            </h3>
+
+                        </div>
+                        <div id="collapse0" class="panel-collapse collapse in" style="float: right; width: 220px;background-color:chocolate;">
+                            <div class="panel panel-info ">
+                                <iframe id="content" src="https://www.clarin.com/tema/ultimas-noticias.html" allowtransparency="1"
+                                    scrolling="yes"  frameborder="0"
+                                    style="margin:0; padding:0; height:100%;display:block; width:100%; border:none;"> No Soporta iFrames</iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> -->
+                <!-- <div class="panel-group" id="accordion" style="float: right; width: 220px;">
+                    <div class="panel panel-info">
+
+                        <div class="panel-heading"> -->
+                <h3 class="panel-title">
+                    <!-- <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1">Tiempos</a> -->
+
+                    <a onclick="alertar(modalTiempos);" class="" data-toggle="modal" href='#modale-id'><i class="fa fa-fw fa-plus"></i>Tiempos</a>
+                </h3>
+
+                <!-- </div> -->
+                <!-- <div id="collapse1" class="panel-collapse collapse in" style="float: right; width: 220px;background-color:chocolate;">
+                    <div class="panel panel-info "> -->
+                <!-- <input type="text" id="clock" name="reloj" size="10"> -->
+
+                <div style="display: none">
+                    <div id="modalTiempos">
+                        <label id="diffechas"></label>
+                        <script>
+                            var f = new Date();
+                            var ano = f.getFullYear();
+                            var mes = f.getMonth();
+                            var dia = f.getDate();
+                            var estiloDia;
+                            var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+                            var diasSemana = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado");
+                            var diasMes = new Array(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+                            var diaMaximo = diasMes[mes];
+                            if (mes == 1 && (((ano % 4 == 0) && (ano % 100 != 0)) || (ano % 400 == 0)))
+                                diaMaximo = 29;
+                            document.write('<div class="mifecha2">');
+                            var diaHoy = diasSemana[f.getUTCDay()] + ' ' + dia + ' ' + meses[mes] + ' ' + ano;
+                            document.getElementById("inpDiaHoy").value = diaHoy;
+
+                            document.write('<div class="mesano">' + diaHoy + '</div>');
+
+                            for (i = 1; i <= diaMaximo; i++) {
+                                if (i == dia)
+                                    estiloDia = "diaactual";
+                                //    else
+                                //       estiloDia = "dia";
+                                //    document.write('<div class="' + estiloDia + '">' + i + '</div>');
+                            }
+                            document.write('</div>');
+                        </script>
+                    </div>
+                </div>
+                <!-- </div>
+                </div> -->
+                <!-- </div>
+
+                </div> -->
+
+            </div>
+
+            <div class="row " style="margin-top: 40px;">
+                <!-- <div style="width: 200px; height: 150px;" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                    <iframe id="iframe"  src="http://www.clarin.com" ></iframe>
+                </div>
+                <div style="width: 2000px; height: 1600px;" id="collapse5" class="panel-collapse collapse in" style="float: right; width: 220px;background-color:chocolate;">
+                    <div class="panel panel-info ">
+                        <iframe id="iframe2"  src="http://www.clarin.com" ></iframe>
+                    </div>
+                </div> -->
+                <div style="width: 200px; height: 150px;">
+                    <iframe id="iframe" src="http://www.minutouno.com"></iframe>
+                </div>
+                <div style="width: 200px; height: 150px;">
+                    <iframe id="iframe" src="https://www.infobae.com/ultimas-noticias/"></iframe>
+                </div>
+            </div>
+
+            <!-- <div class="row">
+                <div class="col-md-1">
+                    <a href="file:///a.docx" type="button" class="btn btn-link btn-sm" target="ventana_iframe">Minuto 1</a>
+                </div>
+                <div class="col-md-1">
+                    <p><a href="http://www.clarin.com" type="button" class="btn btn-link btn-sm" target="ventana_iframe">Clarin</a></p>
+                </div>
+                <div class="col-md-1">
+                    <p><a href="http://www.infobae.com" type="button" class="btn btn-link btn-sm" target="ventana_iframe">Infobae</a></p>
+                </div>
+
+
+
+            </div> -->
+            <!-- <iframe src="http://www.minutouno.com"
+            marginwidth="0" marginheight="0" name="ventana_iframe" scrolling="yes" border="0"
+            frameborder="0" width="800" height="600">
+            </iframe> -->
+            <!-- Búsqueda Google -->
+            <!-- <center>
+                <FORM method=GET action="http://www.google.com/search">
+                    <TABLE bgcolor="#FFFFFF">
+                        <tr>
+                            <td>
+                                <A HREF="http://www.google.com.ar/" target="_blank">
+                                <IMG SRC="http://www.google.com.ar/logos/Logo_40wht.gif" border="0" ALT="Google" align="absmiddle"></A>
+                                <INPUT TYPE=text name=q size=31 maxlength=255 value="">
+                                <INPUT TYPE=hidden name=hl value=es>
+                                <INPUT type=submit name=btnG VALUE="Búsqueda Google" formtarget="_blank">
+                            </td>
+                        </tr>
+                    </TABLE>
+                </FORM>
+            </center> -->
+            <!-- Búsqueda Google -->
+            <!-- <style type="text/css">
+                #rss01{width:300px;border-radius:8px;padding:10px;background-color:white;border:2px solid #d4eefd;margin-bottom:1em;margin:6px 0 12px 0;font-size:0.8em;line-height:18px;}
+                #rss01 a{color:#666666;font-weight:bold;}
+                .rss0l {padding:0 0 8px 0;text-align:left;}
+                </style>
+                <script type="text/javascript">
+                google.load('feeds', '1');
+                    function initialize() {
+                      var feed = new google.feeds.Feed("https://www.telam.com.ar/rss2/ultimasnoticias.xml");
+                      //feed.setNumEntries(10); //mostrar 10 publicaciones
+                      feed.load(function(result) {
+                        if (!result.error) {
+                          var container = document.getElementById("rss01");
+                          var html = '';
+                          for (var i = 0; i < result.feed.entries.length; i++) {
+                            var entry = result.feed.entries[i];
+                             html += '<div class="rss0l"><a href="' + entry.link + '">' + entry.title + '</a></div>';}
+                            container.innerHTML = html;}});}
+                    google.setOnLoadCallback(initialize);
+                </script>
+                <div id="rss01"></div>
+                 -->
+
+
+
+
+        </div>
+
+        <footer>
+            <div class="">
+                <a href="mailto:malonso510@gmail.com">malonso510@gmail.com</a>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <script language="JavaScript">
+        document.body.style.backgroundColor = '#000';
+        function mueveReloj() {
+            momentoActual = new Date();
+            hora = momentoActual.getHours();
+            minuto = momentoActual.getMinutes();
+            segundo = momentoActual.getSeconds();
+            fechaini = new Date('2018-04-01').getTime();
+            dif = momentoActual - fechaini;
+
+            var segs = 1000;
+            var mins = segs * 60;
+            var hours = mins * 60;
+            var days = hours * 24;
+            var months = days * 30.416666666666668;
+            var years = months * 12;
+
+            //calculo
+            var anos = Math.floor(dif / years);
+
+            dif = dif - (anos * years);
+            var meses = Math.floor(dif / months)
+
+            dif = dif - (meses * months);
+            var dias = Math.floor(dif / days)
+
+            dif = dif - (dias * days);
+            var horas = Math.floor(dif / hours)
+
+            dif = dif - (horas * hours);
+            var minutos = Math.floor(dif / mins)
+
+            dif = dif - (minutos * mins);
+            var segundos = Math.floor(dif / segs)
+            var etiqueta = ` ${anos} años, ${meses} meses,  ${dias} dias, ${horas} horas, ${minutos} minutos`;
+            //console.log(`Han pasado ${anos} años, ${meses} meses,  ${dias} dias, ${horas} horas, y ${minutos} minutos desde que naciste. Ya chocheas...!!`)
+            //document.write('label class="">' + anos + ' Años');
+            document.getElementById('diffechas').innerHTML = etiqueta;
+            horaImprimible = zfill(hora, 2) + " : " + zfill(minuto, 2) + " : " + zfill(segundo, 2)
+
+            document.form_reloj.reloj.value = horaImprimible
+            //document.getElementById("clock").value = horaImprimible
+            setTimeout("mueveReloj()", 1000)
+
+        }
+
+        function zfill(number, width) {
+            var numberOutput = Math.abs(number); /* Valor absoluto del número */
+            var length = number.toString().length; /* Largo del número */
+            var zero = "0"; /* String de cero */
+
+            if (width <= length) {
+                if (number < 0) {
+                    return ("-" + numberOutput.toString());
+                } else {
+                    return numberOutput.toString();
+                }
+            } else {
+                if (number < 0) {
+                    return ("-" + (zero.repeat(width - length)) + numberOutput.toString());
+                } else {
+                    return ((zero.repeat(width - length)) + numberOutput.toString());
+                }
+            }
+        }
+
+        function RunFile() {
+            WshShell = new ActiveXObject("WScript.Shell");
+            WshShell.Run("c:/windows/system32/notepad.exe", 1, false);
+        }
+
+    </script>
+    <!-- <style type="text/css">
+        html, body, div, iframe { margin:0; padding:0; height:100%; }
+        iframe { display:block; width:100%; border:none; }
+    </style> -->
+    
+    
+    <script src="~/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    
+    <script src="./js/bootstrap.min.js"></script>
+    
+    <script src="~/js/jquery.js"></script>
+    
+    <script src="~/js/script.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://unpkg.com/sweetalert2@7.8.2/dist/sweetalert2.all.js"></script>
+    <script src="js/opciones.js"></script>
+    <style>
+        #iframe {
+            width: 800px;
+            height: 600px;
+            border: none;
+            -moz-transform: scale(0.2);
+            -moz-transform-origin: 0 0;
+            -o-transform: scale(0.2);
+            -o-transform-origin: 0 0;
+            -webkit-transform: scale(0.2);
+            -webkit-transform-origin: 0 0;
+            overflow: hiden;
+        }
+
+        #iframe2 {
+            width: 3000px;
+            height: 2600px;
+            border: none;
+            -moz-transform: scale(0.2);
+            -moz-transform-origin: 0 0;
+            -o-transform: scale(0.2);
+            -o-transform-origin: 0 0;
+            -webkit-transform: scale(0.2);
+            -webkit-transform-origin: 0 0;
+            overflow: hiden;
+        }
+    </style>
+
+</body>
+
+</html>
